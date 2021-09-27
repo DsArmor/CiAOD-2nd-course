@@ -1,0 +1,4 @@
+C:\Users\zelez\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" "D:\CiAOD\CiAOD homework\hash_tables"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/CiAOD/CiAOD homework/hash_tables/cmake-build-debug

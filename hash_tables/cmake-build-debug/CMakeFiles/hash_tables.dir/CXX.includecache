@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CiAOD/CiAOD homework/hash_tables/bank_account.h
+string
+-
+
+D:/CiAOD/CiAOD homework/hash_tables/hash_table.h
+iostream
+D:/CiAOD/CiAOD homework/hash_tables/iostream
+bank_account.h
+D:/CiAOD/CiAOD homework/hash_tables/bank_account.h
+
+D:/CiAOD/CiAOD homework/hash_tables/main.cpp
+main.h
+D:/CiAOD/CiAOD homework/hash_tables/main.h
+
+D:/CiAOD/CiAOD homework/hash_tables/main.h
+hash_table.h
+D:/CiAOD/CiAOD homework/hash_tables/hash_table.h
+
