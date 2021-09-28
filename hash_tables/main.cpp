@@ -5,23 +5,26 @@
 #include "main.h"
 
 int main() {
-    auto *my_table = new HashTable<Bank_account>(15);
+    auto *my_table = new HashTable<BankAccount>(5);
     char c = 'a';
-    for (int i = 0; i < 30; i++) {
+    for (int i = 0; i < 10; i++) {
         string s = "";
         s += c++;
-        auto *chel = new Bank_account(i * 10 + i / 13 + i, s, s);
+        auto *chel = new BankAccount(i * 10 + i / 13 + i, s + to_string(i), s);
         my_table->insert(chel);
     }
     my_table->output();
     c = 'a';
-    for (int i = 0; i < 30; i++) {
+    for (int i = 0; i < 10; i++) {
         string s = "";
         s += c++;
-        auto *chel = new Bank_account( i * 10 + i / 13 + i, s, s);
+        auto *chel = new BankAccount(i * 10 + i / 13 + i, s + to_string(i), s);
         my_table->remove(chel);
     }
     my_table->output();
-//    my_table->remove(my_table->find(133));
+    auto *chel = new BankAccount(13, "k", "f");
+    my_table->remove(chel);
 
+    my_table->remove(my_table->find(99));
+    my_table->output();
 }

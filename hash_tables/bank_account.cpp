@@ -4,21 +4,21 @@
 
 #include "bank_account.h"
 
-Bank_account::Bank_account(int bank_number, string fio, string address)
+BankAccount::BankAccount(int bank_number, string fio, string address)
 {
     this->bank_number = bank_number;
     this->fio = fio;
     this->address = address;
 }
 
-int Bank_account::getKey() {
+int BankAccount::getKey() {
     return (bank_number);
 }
 
-string Bank_account::getFio() {
+string BankAccount::getFio() {
     return fio;
 }
 
-string Bank_account::getAddress() {
+string BankAccount::getAddress() {
     return address;
 }

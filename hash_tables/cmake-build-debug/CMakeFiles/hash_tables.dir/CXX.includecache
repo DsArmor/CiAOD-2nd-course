@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-D:/CiAOD/CiAOD homework/hash_tables/bank_account.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/bank_account.h
 string
 -
 
-D:/CiAOD/CiAOD homework/hash_tables/hash_table.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/hash_table.h
 iostream
-D:/CiAOD/CiAOD homework/hash_tables/iostream
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/iostream
 bank_account.h
-D:/CiAOD/CiAOD homework/hash_tables/bank_account.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/bank_account.h
 
-D:/CiAOD/CiAOD homework/hash_tables/main.cpp
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/main.cpp
 main.h
-D:/CiAOD/CiAOD homework/hash_tables/main.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/main.h
 
-D:/CiAOD/CiAOD homework/hash_tables/main.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/main.h
 hash_table.h
-D:/CiAOD/CiAOD homework/hash_tables/hash_table.h
+D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/hash_table.h
 

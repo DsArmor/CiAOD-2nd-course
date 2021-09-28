@@ -9,14 +9,14 @@
 
 using namespace std;
 
-class Bank_account
+class BankAccount
 {
 private:
     int bank_number;
     string fio;
     string address;
 public:
-    Bank_account(int bank_number, string fio, string address);
+    BankAccount(int bank_number, string fio, string address);
     int getKey();
     string getFio();
     string getAddress();
