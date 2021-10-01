@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/third_semestr/CiAOD/CiAOD homework/binary_operation_all/binary_operation/main.cpp
+iostream
+-
+bitset
+D:/third_semestr/CiAOD/CiAOD homework/binary_operation_all/binary_operation/bitset
+fstream
+D:/third_semestr/CiAOD/CiAOD homework/binary_operation_all/binary_operation/fstream
+vector
+D:/third_semestr/CiAOD/CiAOD homework/binary_operation_all/binary_operation/vector
+chrono
+D:/third_semestr/CiAOD/CiAOD homework/binary_operation_all/binary_operation/chrono
+
