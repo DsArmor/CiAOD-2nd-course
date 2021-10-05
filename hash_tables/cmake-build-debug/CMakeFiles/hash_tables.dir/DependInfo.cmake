@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/bank_account.cpp" "D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/cmake-build-debug/CMakeFiles/hash_tables.dir/bank_account.cpp.obj"
-  "D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/main.cpp" "D:/3-nd semestr/CiAOD/CiAOD homework/hash_tables_all/hash_tables/cmake-build-debug/CMakeFiles/hash_tables.dir/main.cpp.obj"
+  "D:/third_semestr/CiAOD/CiAOD homework/Git/CiAOD-with-git/hash_tables/bank_account.cpp" "D:/third_semestr/CiAOD/CiAOD homework/Git/CiAOD-with-git/hash_tables/cmake-build-debug/CMakeFiles/hash_tables.dir/bank_account.cpp.obj"
+  "D:/third_semestr/CiAOD/CiAOD homework/Git/CiAOD-with-git/hash_tables/main.cpp" "D:/third_semestr/CiAOD/CiAOD homework/Git/CiAOD-with-git/hash_tables/cmake-build-debug/CMakeFiles/hash_tables.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
