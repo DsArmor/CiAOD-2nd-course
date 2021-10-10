@@ -8,6 +8,7 @@
 # define SIZE 256
 #include "string"
 #include "iostream"
+#include "list"
 
 using namespace std;
 

@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/main.cpp" "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/main.cpp.obj"
-  "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/pair.cpp" "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/pair.cpp.obj"
-  "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/search_boyer.cpp" "D:/third_semestr/CiAOD/CiAOD homework/search_in_text_all/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/search_boyer.cpp.obj"
+  "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/main.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/main.cpp.o"
+  "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/pair.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/pair.cpp.o"
+  "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/search_boyer.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/search_boyer.cpp.o"
+  "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/test.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/search_in_text/cmake-build-debug/CMakeFiles/search_in_text.dir/test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -86,20 +86,31 @@ void find_substr(string substr, string str, int biases[], int suffix_table[]) {
     int m = substr.length();
     int i = m - 1;
     int k;
+    int shift = 0;
+    int turbo_shift = 0;
+    int u = m;
+    list<int> answer;
 
     while (i < n) {
         for (k = m - 1; k >= 0; k--) {
             if (str[i] != substr[k]) {
-                if (suffix_table[m - k - 1] != str.length())
-                    i += m - k - 1 + suffix_table[m - k - 1];
+                if (suffix_table[m - k - 1] != substr.length())
+                    shift = m - k - 1 + max(turbo_shift, suffix_table[m - k - 1]);
                 else
-                    i += m - k - 1 + biases[(int) str[i]];
+                    shift = m - k - 1 + max(turbo_shift, biases[(int) str[i]]);
                 break;
             }
             i--;
         }
+        turbo_shift = u - m + 1 + k;
+        if (shift == m - k - 1 + suffix_table[m - k - 1])
+            u = min((m - shift), m - k - 1);
+        else if (turbo_shift < biases[(int) str[i]])
+            u = 0;
+        i += shift;
         if (k == -1) {
             i += 1;
+            answer.push_back(i);
             cout << "found " << i << " ";
             i += m;
         }
@@ -111,7 +122,6 @@ void search_boyer(string substr, string str) {
     int *suffix_table = new int[substr.length()];
 
     fill_prefix_rev(substr, suffix_table);
-//    fill_suffix(substr, suffix_table);
     fill_biases(substr, substr.length(), biases);
     find_substr(substr, str, biases, suffix_table);
 }

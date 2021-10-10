@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/search_in_text.dir/main.cpp.obj"
-  "CMakeFiles/search_in_text.dir/pair.cpp.obj"
-  "CMakeFiles/search_in_text.dir/search_boyer.cpp.obj"
-  "search_in_text.exe"
-  "search_in_text.exe.manifest"
-  "search_in_text.lib"
+  "CMakeFiles/search_in_text.dir/main.cpp.o"
+  "CMakeFiles/search_in_text.dir/pair.cpp.o"
+  "CMakeFiles/search_in_text.dir/search_boyer.cpp.o"
+  "CMakeFiles/search_in_text.dir/test.cpp.o"
+  "search_in_text"
   "search_in_text.pdb"
 )
 
