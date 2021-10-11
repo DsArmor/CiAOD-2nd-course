@@ -8,10 +8,9 @@
 #include <iostream>
 #include "vector"
 #include "string"
+#include "search_boyer.h"
+#include "pair.h"
 
 using namespace std;
-
-void find_pair(string str);
-void search_boyer(string substr, string str);
 
 #endif //SEARCH_IN_TEXT_MAIN_H

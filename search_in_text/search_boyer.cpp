@@ -102,18 +102,18 @@ void find_substr(string substr, string str, int biases[], int suffix_table[]) {
             }
             i--;
         }
-        turbo_shift = u - m + 1 + k;
+        turbo_shift = 0;
         if (shift == m - k - 1 + suffix_table[m - k - 1])
             u = min((m - shift), m - k - 1);
         else if (turbo_shift < biases[(int) str[i]])
             u = 0;
-        i += shift;
         if (k == -1) {
             i += 1;
             answer.push_back(i);
             cout << "found " << i << " ";
             i += m;
-        }
+        } else
+            i += shift;
     }
 }
 
