@@ -1,26 +1,33 @@
 #include "search_boyer.h"
 
 void fill_prefix_rev(string str, int *suffix_table) {
-    reverse(str.begin(), str.end());
+    reverse(str.begin(), str.end()); //перевернуть строку
     int *z = new int[str.length()];
     for (int i = 0; i < str.length(); i++) {
         suffix_table[i] = str.length();
         z[i] = 0;
-    }
+    } // заполнили таблицу суффиксов длиной подстроки и массив z -> 0
     int left = 0, right = 0;
-    for (int i = 1; i < str.length(); i++) {
-        z[i] = max(0, min(z[i - left], right - i));
+    for (int i = 1; i < str.length(); i++) { // реализация z-функции
+        z[i] = max(0, min(z[i - left], right - i)); // сдвиг префикса
         while (i + z[i] < str.length() && str[z[i]] == str[i + z[i]])
-            z[i] += 1;
+            z[i] += 1; // увеличим сдвиг
         if (i + z[i] > right) {
-            left = i;
-            right = i + z[i];
+            left = i; // сдвиг левой границы z-блока
+            right = i + z[i]; // сдвиг правой границы z-блока
         }
     }
+    for (int i = 0; i < str.length(); i++)
+        cout << z[i] << " ";
     for (int i = 0; i < str.length(); i++) {
+        // проверка на то, что мы это не изменяли ранее
         if (suffix_table[z[i]] == str.length())
-            suffix_table[z[i]] = i;
+            suffix_table[z[i]] = i; // заполнить сдвигом
+        // проверка на то, что текущая длина префикса
+        // + позиция совпадают с длиной строки
         if (z[i] + i == str.length()) {
+            // в таком случае заполнить все до конца массива суффиксов
+            // сдвигом на i позиций
             for (int j = z[i] + 1; j < str.length(); j++)
                 suffix_table[j] = i;
             break;
@@ -76,6 +83,7 @@ void fill_biases(string str, int size, int biases[]) {
     for (int i = 0; i < SIZE; i++) {
         biases[i] = size;
     }
+    // заполнение плохими символами
     for (int i = 0; i + 1 < size; i++) {
         biases[(int) str[i]] = size - i - 1;
     }
@@ -92,27 +100,39 @@ void find_substr(string substr, string str, int biases[], int suffix_table[]) {
     list<int> answer;
 
     while (i < n) {
+        // пока меньше длины строки
         for (k = m - 1; k >= 0; k--) {
+            // с конца подстроки
             if (str[i] != substr[k]) {
+                // если не равны элементы
                 if (suffix_table[m - k - 1] != substr.length())
+                    // сдвиг сделать по таблице суффиксов
                     shift = m - k - 1 + max(turbo_shift, suffix_table[m - k - 1]);
                 else
+                    // сдвиг по таблице плохих символов
                     shift = m - k - 1 + max(turbo_shift, biases[(int) str[i]]);
                 break;
             }
+            // remove 2
+            if (u != 0 and k == m - 1 - shift)
+                k -= u; // если до этого мы уже такой суффикс сравнили
             i--;
         }
-        turbo_shift = 0;
+        // turbo_shift = 0;
+        turbo_shift = u - m + 1 + k; // вычисление турбосдвига
+        // проверка на то, что смщеение было по турбосдвигу
         if (shift == m - k - 1 + suffix_table[m - k - 1])
             u = min((m - shift), m - k - 1);
         else if (turbo_shift < biases[(int) str[i]])
             u = 0;
+        // дошли до конца подстроки
         if (k == -1) {
             i += 1;
             answer.push_back(i);
             cout << "found " << i << " ";
             i += m;
         } else
+            // добавим к i полученный сдвиг
             i += shift;
     }
 }
@@ -121,7 +141,7 @@ void search_boyer(string substr, string str) {
     int biases[SIZE];
     int *suffix_table = new int[substr.length()];
 
-    fill_prefix_rev(substr, suffix_table);
-    fill_biases(substr, substr.length(), biases);
-    find_substr(substr, str, biases, suffix_table);
+    fill_prefix_rev(substr, suffix_table); // заполнить таблицу суффиксов
+    fill_biases(substr, substr.length(), biases); // таблицу плохих символов
+    find_substr(substr, str, biases, suffix_table); // сам алгоритм поиска
 }
