@@ -24,7 +24,6 @@ struct t_tree
 };
 
 extern s_tree sentinel;
-//s_tree sentinel = {BLACK, '\0', nullptr, 0, 0};
 
 void tree_insert_data(s_tree **root, char symbol, bool (*cmp_f)(char, char));
 void tree_direct_search(s_tree *root, void (*apply_f)(s_tree *));

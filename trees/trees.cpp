@@ -4,7 +4,7 @@
 
 #include "trees.h"
 
-s_tree sentinel = {BLACK, '\0', nullptr, 0, 0};
+s_tree sentinel = {BLACK, '\0', nullptr, NIL, NIL};
 
 s_tree *tree_create_node(char symbol, s_tree *parent)
 {
@@ -19,41 +19,39 @@ s_tree *tree_create_node(char symbol, s_tree *parent)
 
 void left_rotate(s_tree *root)
 {
-    char tmp = root->parent->data;
-    root->parent->data = root->data;
-    root->parent->right = tree_create_node(tmp, root->parent);
-    root->parent->left = NIL;
-
-    root->parent->parent->left->left =
-            tree_create_node(root->parent->parent->left->data, root->parent->parent->left);
-    root->parent->parent->left->left->color = BLACK;
-
-    root->parent->parent->left->data = root->parent->parent->data;
-    root->parent->parent->left->color = RED;
-
+    s_tree *left = root->parent->parent->left;
+//    s_tree *left_child = root->parent->parent->left->left;
+//    s_tree *right_child = root->parent->parent->left->right;
+    root->parent->parent->left = tree_create_node(root->parent->parent->data, root->parent->parent);
+    root->parent->parent->left->left = left;
+    root->parent->parent->left->right = root->parent->left;
+    root->parent->parent->left->left->parent = root->parent->parent->left;
+//    root->parent->parent->left->right = right_child;
     root->parent->parent->data = root->parent->data;
+
+//    s_tree *parent = root->parent->parent;
+//    root->parent->parent->right = root;
+//    root->parent->parent = parent;
+//    root->parent = root;
+
+
+//work хоть как то
     root->parent->data = root->data;
+    root->parent->left = root->left; // не факт
     root->parent->right = root->right;
     free(root);
 }
 
 void right_rotate(s_tree *root)
 {
-    char tmp = root->parent->data;
-    root->parent->data = root->data;
-    root->parent->left = tree_create_node(tmp, root->parent);
-    root->parent->right = NIL;
-
-    root->parent->parent->right->right =
-            tree_create_node(root->parent->parent->right->data, root->parent->parent->right);
-    root->parent->parent->right->right->color = BLACK;
-
-    root->parent->parent->right->data = root->parent->parent->data;
-    root->parent->parent->right->color = RED;
-
+    s_tree *left_child = root->parent->parent->right->left;
+    s_tree *right_child = root->parent->parent->right->right;
+    root->parent->parent->right = tree_create_node(root->parent->parent->data, root->parent->parent);
+    root->parent->parent->right->left = left_child;
+    root->parent->parent->right->right = right_child;
     root->parent->parent->data = root->parent->data;
     root->parent->data = root->data;
-    root->parent->left = root->left;
+    root->parent->left = NIL;
     free(root);
 }
 
@@ -76,6 +74,8 @@ void tree_insert_data(s_tree **root, char symbol, bool (*cmp_f)(char, char))
     }
     while ((*root)->parent->parent)
     {
+        if ((*root)->parent->color == BLACK)
+            return ;
         s_tree **tmp = &((*root)->parent->parent);
         if ((*root)->parent->parent->right->color == RED
         && (*root)->parent->parent->left->color == RED)
@@ -90,10 +90,9 @@ void tree_insert_data(s_tree **root, char symbol, bool (*cmp_f)(char, char))
             right_rotate(*root);
         root = tmp;
         if (!(*root)->parent)
-        {
             (*root)->color = BLACK;
+        if ((*root)->color == BLACK)
             return ;
-        }
     }
 }
 
@@ -110,9 +109,10 @@ void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *, const string &)
 {
     if (root == NIL)
         return ;
-    tree_inorder_search(root->left, apply_f, indent + "\t");
-    apply_f(root, indent);
     tree_inorder_search(root->right, apply_f, indent + "\t");
+    apply_f(root, indent);
+    tree_inorder_search(root->left, apply_f, indent + "\t");
+
 }
 
 int find_deep(s_tree *root, char symbol,  bool (*cmp_f)(char, char))

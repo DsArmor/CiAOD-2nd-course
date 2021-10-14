@@ -10,11 +10,13 @@ int main()
     {
         char a;
         cin >> a;
-        cout << (int)a << " ";
+//        cout << (int)a << " ";
         tree_insert_data(&root, a, cmp_char);
+        tree_inorder_search(root, output_symbol, "");
+        cout << "\n\n\n";
     }
 //    tree_direct_search(root, output_symbol);
-    tree_inorder_search(root, output_symbol, "");
+//    tree_inorder_search(root, output_symbol, "");
 //    int ave = 0;
 //    average(root, &ave);
 //    cout << ave / n;

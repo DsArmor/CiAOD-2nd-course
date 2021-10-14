@@ -24,7 +24,12 @@ void output_symbol(s_tree *node)
 
 void output_symbol(s_tree *node, const string & indent)
 {
-    cout << indent << node->data << "\n";
+    string color;
+    if (node->color == RED)
+        color = "RED";
+    else
+        color = "BLACK";
+    cout << indent << node->data << " " << color << "\n";
 
 }
 
