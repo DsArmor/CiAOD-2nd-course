@@ -2,11 +2,10 @@
 // Created by zelez on 10/13/2021.
 //
 
-#ifndef TREES_MAIN_H
-#define TREES_MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <iostream>
-#include "string"
 #include "trees.h"
 
 using namespace std;
@@ -23,9 +22,10 @@ void output_symbol(s_tree *node)
     cout << node->data << " ";
 }
 
-void output_symbol(s_tree *node, string indent)
+void output_symbol(s_tree *node, const string & indent)
 {
     cout << indent << node->data << "\n";
+
 }
 
-#endif //TREES_MAIN_H
+#endif //MAIN_H

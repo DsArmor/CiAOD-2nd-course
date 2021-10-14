@@ -1,10 +1,11 @@
-#include "main.h"
+#include "main.h" // MAIN_H
 
 int main()
 {
     int n;
     cin >> n;
     s_tree *root = NIL;
+
     for (int i = 0; i < n; i++)
     {
         char a;

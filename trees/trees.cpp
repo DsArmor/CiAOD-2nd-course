@@ -4,6 +4,8 @@
 
 #include "trees.h"
 
+s_tree sentinel = {BLACK, '\0', nullptr, 0, 0};
+
 s_tree *tree_create_node(char symbol, s_tree *parent)
 {
     auto *new_node = new s_tree();
@@ -104,7 +106,7 @@ void tree_direct_search(s_tree *root, void (*apply_f)(s_tree *))
     tree_direct_search(root->right, apply_f);
 }
 
-void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *, string), string indent)
+void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *, const string &), const string &indent)
 {
     if (root == NIL)
         return ;

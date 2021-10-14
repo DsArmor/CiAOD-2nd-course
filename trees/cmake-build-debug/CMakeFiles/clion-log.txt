@@ -1,4 +1,4 @@
-C:\Users\zelez\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" "D:\third_semestr\CiAOD\CiAOD homework\trees_all\trees"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/fmaryam/Desktop/CiAOD-2nd-course/trees
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug
+-- Build files have been written to: /Users/fmaryam/Desktop/CiAOD-2nd-course/trees/cmake-build-debug
