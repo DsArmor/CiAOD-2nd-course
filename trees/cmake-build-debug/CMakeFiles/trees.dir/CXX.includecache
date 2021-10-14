@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.cpp
+trees.h
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.h
+
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.h
+string
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/string
+

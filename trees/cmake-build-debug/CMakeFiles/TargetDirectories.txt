@@ -1,0 +1,3 @@
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug/CMakeFiles/trees.dir
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug/CMakeFiles/rebuild_cache.dir
