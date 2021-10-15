@@ -166,12 +166,13 @@ int find_deep(s_tree *root, char symbol, bool (*cmp_f)(char, char)) {
     return (0);
 }
 
-void average(s_tree *root, int *ave) {
+void average(s_tree *root, int *ave, int *count) {
     // среднее арифметическое получим, выполнив симметричный обход дерева
     // на каждом узле прибавим его к ave, на выходе получим сумму всех data узлов
     if (root == NIL)
         return;
-    average(root->left, ave);
+    (*count)++;
+    average(root->left, ave, count);
     *ave += root->data;
-    average(root->right, ave);
+    average(root->right, ave, count);
 }

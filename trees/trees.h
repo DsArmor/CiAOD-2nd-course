@@ -34,7 +34,7 @@ void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *));
 // мой обход дерева для красивого вывода
 void tree_collab_inorder_search(s_tree *root, void (*apply_f)(s_tree *, const string &), const string &indent);
 // поиск среднего арифметического
-void average(s_tree *root, int *ave);
+void average(s_tree *root, int *ave, int *count);
 // поиск глубины
 int find_deep(s_tree *root, char symbol,  bool (*cmp_f)(char, char));
 
