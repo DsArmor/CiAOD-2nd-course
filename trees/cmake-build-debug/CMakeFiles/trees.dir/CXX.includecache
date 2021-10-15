@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/trees.cpp
-trees.h
-/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/trees.h
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/main.cpp
+main.h
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/main.h
 
-/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/trees.h
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/main.h
+iostream
+-
+trees.h
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.h
+
+D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.h
 string
 -
 

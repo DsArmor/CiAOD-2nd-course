@@ -30,7 +30,6 @@ void output_symbol(s_tree *node, const string & indent)
     else
         color = "BLACK";
     cout << indent << node->data << " " << color << "\n";
-
 }
 
 #endif //MAIN_H

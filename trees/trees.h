@@ -25,10 +25,17 @@ struct t_tree
 
 extern s_tree sentinel;
 
+// вставка элемента
 void tree_insert_data(s_tree **root, char symbol, bool (*cmp_f)(char, char));
+// прямой обход дерева
 void tree_direct_search(s_tree *root, void (*apply_f)(s_tree *));
-void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *, const string &), const string & indent);
+// симметричный обход дерева
+void tree_inorder_search(s_tree *root, void (*apply_f)(s_tree *));
+// мой обход дерева для красивого вывода
+void tree_collab_inorder_search(s_tree *root, void (*apply_f)(s_tree *, const string &), const string &indent);
+// поиск среднего арифметического
 void average(s_tree *root, int *ave);
+// поиск глубины
 int find_deep(s_tree *root, char symbol,  bool (*cmp_f)(char, char));
 
 

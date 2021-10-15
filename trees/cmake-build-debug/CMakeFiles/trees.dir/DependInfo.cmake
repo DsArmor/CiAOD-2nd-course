@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/main.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/cmake-build-debug/CMakeFiles/trees.dir/main.cpp.o"
-  "/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/trees.cpp" "/Users/fmaryam/Desktop/CiAOD-2nd-course/trees/cmake-build-debug/CMakeFiles/trees.dir/trees.cpp.o"
+  "D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/main.cpp" "D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug/CMakeFiles/trees.dir/main.cpp.obj"
+  "D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/trees.cpp" "D:/third_semestr/CiAOD/CiAOD homework/trees_all/trees/cmake-build-debug/CMakeFiles/trees.dir/trees.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
