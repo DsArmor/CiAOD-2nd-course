@@ -10,20 +10,17 @@
 
 using namespace std;
 
-bool cmp_char(char a, char b)
-{
+bool cmp_char(char a, char b) {
     if (a >= b)
         return (true);
     return (false);
 }
 
-void output_symbol(s_tree *node)
-{
+void output_symbol(s_tree *node) {
     cout << node->data << " ";
 }
 
-void output_symbol(s_tree *node, const string & indent)
-{
+void output_symbol(s_tree *node, const string &indent) {
     string color;
     if (node->color == RED)
         color = "RED";

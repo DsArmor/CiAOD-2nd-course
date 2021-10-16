@@ -19,7 +19,7 @@ s_tree *tree_create_node(char symbol, s_tree *parent) {
 
 void left_rotate(s_tree *root) {
     // выполнить малый левый поворот, если нужно
-    if (root->parent->left->color == RED){
+    if (root->parent->left->color == RED) {
         root->parent->parent->right = root;
         s_tree *right_cur = root->right;
         root->right = root->parent;
@@ -42,7 +42,7 @@ void left_rotate(s_tree *root) {
 
 void right_rotate(s_tree *root) {
     // выполнить малый правый поворот, если надо
-    if (root->parent->right->color == RED){
+    if (root->parent->right->color == RED) {
         root->parent->parent->left = root;
         s_tree *left_cur = root->left;
         root->left = root->parent;
@@ -63,8 +63,7 @@ void right_rotate(s_tree *root) {
     root->parent = root->parent->parent;
 }
 
-void doBalance(s_tree *root)
-{
+void doBalance(s_tree *root) {
     // пока есть дед
     while (root->parent->parent) {
         // если цвет родителя черный -> все хорошо, выходим

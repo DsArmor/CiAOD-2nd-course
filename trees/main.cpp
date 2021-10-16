@@ -2,14 +2,13 @@
 
 void menu_choose(int a, s_tree **root);
 
-void rand_fill(s_tree **root){
+void rand_fill(s_tree **root) {
     cout << "n = ";
     char a;
     int n;
     cin >> n;
     cout << "Tree: ";
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         a = rand() % 90 + 38;
         cout << a << " ";
         tree_insert_data(root, a, cmp_char);
@@ -20,7 +19,7 @@ void rand_fill(s_tree **root){
     menu_choose(4, root);
 }
 
-void menu(){
+void menu() {
     cout << "\nMenu: \n";
     cout << "0 -> end\n";
     cout << "1 -> insert node\n";
@@ -33,8 +32,7 @@ void menu(){
     cout << "Input number: ";
 }
 
-void menu_choose(int a, s_tree **root)
-{
+void menu_choose(int a, s_tree **root) {
     int ave = 0;
     int count = 0;
     char c;
@@ -69,7 +67,7 @@ void menu_choose(int a, s_tree **root)
                 cout << "Empty tree\n";
             break;
         case 6:
-            cout << " Search item: ";
+            cout << "Search item: ";
             char b;
             cin >> b;
             cout << "\ndeep = ";
@@ -78,18 +76,16 @@ void menu_choose(int a, s_tree **root)
         case 7:
             rand_fill(root);
         case 0:
-            return ;
+            return;
     }
 }
 
-int main()
-{
+int main() {
     srand(time(nullptr));
     s_tree *root = NIL;
     int n;
     n = 1;
-    while (n != 0)
-    {
+    while (n != 0) {
         menu();
         cin >> n;
         menu_choose(n, &root);
