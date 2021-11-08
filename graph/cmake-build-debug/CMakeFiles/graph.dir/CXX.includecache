@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/third_semestr/CiAOD/CiAOD homework/graph/main.cpp
+iostream
+-
+map
+D:/third_semestr/CiAOD/CiAOD homework/graph/map
+
