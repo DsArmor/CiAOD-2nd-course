@@ -3,6 +3,20 @@
 
 using namespace std;
 
+/*
+6 10
+1 2 8
+1 3 4
+2 5 3
+2 4 6
+3 2 3
+3 6 10
+3 4 2
+4 6 1
+4 5 3
+5 6 4
+ */
+
 int min_way;
 int pattern;
 
@@ -17,6 +31,8 @@ Node *best;
 Node *create_node(int start, int **adj_matrix, int x, int end, Node *parent) {
     Node *in = new Node();
     in->value = start - 1;
+    if (parent != nullptr && parent == in->parent)
+        return in;
     in->parent = parent;
     if (in->value == end)
         return in;

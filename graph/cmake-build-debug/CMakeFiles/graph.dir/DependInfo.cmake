@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/third_semestr/CiAOD/CiAOD homework/graph/main.cpp" "D:/third_semestr/CiAOD/CiAOD homework/graph/cmake-build-debug/CMakeFiles/graph.dir/main.cpp.obj"
+  "D:/third_semestr/CiAOD/CiAOD homework/grafs_all/graph/main.cpp" "D:/third_semestr/CiAOD/CiAOD homework/grafs_all/graph/cmake-build-debug/CMakeFiles/graph.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
