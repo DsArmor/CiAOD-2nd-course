@@ -1,0 +1,3 @@
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/cmake-build-debug/CMakeFiles/encode_decode.dir
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/cmake-build-debug/CMakeFiles/rebuild_cache.dir

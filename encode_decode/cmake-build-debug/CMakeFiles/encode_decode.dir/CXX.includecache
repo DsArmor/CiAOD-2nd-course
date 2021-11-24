@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/Huffman.cpp
+Huffman.h
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/Huffman.h
+
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/Huffman.h
+iostream
+-
+queue
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/queue
+list
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/list
+map
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/map
+sstream
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/sstream
+fstream
+D:/third_semestr/CiAOD/CiAOD homework/coding_all/encode_decode/fstream
+
