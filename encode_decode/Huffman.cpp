@@ -122,17 +122,20 @@ void output(Node_H *root, string str) {
 
 void Huffman() {
     string str;
+    string str1;
     ifstream in(R"(D:\third_semestr\CiAOD\CiAOD homework\coding_all\encode_decode\text.txt)");
     if (in.is_open()) {
-        while (getline(in, str));
+        while (getline(in, str1)){
+            str +=str1;
+            str += '\n';
+        }
     }
+    str.pop_back();
     in.close();
-    cout << str.length();
-    cout << str << '\n';
     Node_H *root = str_to_tree(str);
     vector<bool> code;
     encode(root, code);
-    output(root, "");
+//    output(root, "");
     string ans;
     ofstream out;
     out.open(R"(D:\third_semestr\CiAOD\CiAOD homework\coding_all\encode_decode\text_encode.txt)");

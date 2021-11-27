@@ -128,11 +128,15 @@ void decode(Node_S *root){
 }
 
 void Shannon_fano() {
-    string str;
+    string str, str1;
     ifstream in(R"(D:\third_semestr\CiAOD\CiAOD homework\coding_all\encode_decode\text.txt)");
-    if (in.is_open()){
-        while (getline(in, str));
+    if (in.is_open()) {
+        while (getline(in, str1)){
+            str +=str1;
+            str += '\n';
+        }
     }
+    str.pop_back();
     in.close();
     Node_S *root = str_to_tree(str);
     vector<bool> code;
