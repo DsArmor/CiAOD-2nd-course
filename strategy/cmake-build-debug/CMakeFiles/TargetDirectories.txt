@@ -1,0 +1,3 @@
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/cmake-build-debug/CMakeFiles/strategy.dir
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

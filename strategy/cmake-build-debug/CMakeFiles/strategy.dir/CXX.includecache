@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/matrix.cpp
+matrix.h
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/matrix.h
+salesman.h
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/salesman.h
+
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/matrix.h
+iostream
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/iostream
+
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/salesman.h
+iostream
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/iostream
+iomanip
+-
+vector
+D:/third_semestr/CiAOD/CiAOD homework/strategy_all/strategy/vector
+
